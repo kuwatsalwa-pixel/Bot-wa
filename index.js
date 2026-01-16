@@ -12,7 +12,7 @@ async function startBot() {
   const sock = makeWASocket({
     auth: state,
     logger: Pino({ level: "silent" }),
-    printQRInTerminal: false
+    printQRInTerminal: true
   })
 
   if (!sock.authState.creds.registered) {
